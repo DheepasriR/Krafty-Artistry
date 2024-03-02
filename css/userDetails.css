@@ -1,0 +1,242 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .nav-sidebar {
+    flex: 0 0 20%;
+    padding-right: 20px;
+    margin-right: 20px; /* Add margin to create spacing */
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  .content-section {
+    width: 50%;
+  }
+  
+  .form-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px; /* Add margin to create spacing */
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  /* Add your custom styles for form elements and other components as needed */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px; 
+  }
+  
+  select.form-control {
+    height: 50px; 
+  }
+  
+  button {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /*Styles for form*/
+  .form-control {
+    padding: 15px; /* Increase padding for larger fields */
+    font-size: 18px; /* Increase font size for larger fields */
+    background-color: #fff;
+    width: 100%;
+    margin: 0% 0%;
+    padding: 5% 2%;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+    box-shadow: 0 0 10px rgba(75, 73, 73, 0.1);
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /*Styles for button*/
+  button {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px; /* Increase padding for larger buttons */
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+
+  /* Styles for input fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[id="phone"],
+  input[type="date"],
+  input[type="email"],
+  select[id="gender"]
+  
+  
+   {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  input[type="submit"] {
+    background-color: #fffafc;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 0%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+
+  /* Style for image tag */
+  img {
+    
+    
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+  }
+
+  /* Styles for h3 */
+  h3 {
+    text-align: center;
+    margin-left: -20px;
+  }
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1c1c;
+    padding: 25px;
+    margin-bottom: 0px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Search bar styles */
+  .search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    padding: 6px 12px;
+    background-color: #c2baba;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .search-button:hover {
+    background-color: #555;
+  }
+  
+  /* User greeting style */
+  .user-greeting {
+    margin-left: auto;
+    margin-right: 15px;
+    color: white;
+  }
+  
+  /* Shopping cart style */
+  .shopping-cart i {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .user-icon {
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .user-icon i {
+    display: inline-block;
+    vertical-align: middle; /* Remove unrecognized character and keep this line as-is */
+  }
+  
+  

@@ -1,0 +1,275 @@
+
+/* Styles for the second navbar */
+.navbar-secondary {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 0px;
+}
+
+/* Logo style */
+.navbar-secondary .logo {
+  text-decoration: none;
+  color: #87c5f4;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Lucida Handwriting;
+}
+
+/* Navbar right section styles */
+.navbar-secondary .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Product categories style */
+.navbar-secondary .categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-secondary .categories li {
+  margin-right: 10px;
+}
+
+.navbar-secondary .categories li a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-secondary .categories li a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* Product category styles for navbar 2 */
+.categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories li {
+  margin: 0 10px;
+}
+
+.categories li a {
+  font-weight: bold;
+  color: #333;
+}
+
+.categories li a:hover {
+  text-decoration: underline;
+}
+
+/* Carousel image styles */
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-secondary {
+  /* position: absolute;
+    background: transparent; */
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*  
+  .carousel-container {
+    margin-top: 60px; 
+  } */
+/* .carousel {
+    height: 400px; Set your desired carousel height
+  } */
+
+
+
+/**footer**/
+/* your-css-file.css */
+/* Override the user agent styles for 'div' */
+/* div {
+    display: block;
+  } */
+
+/* Style for the footer section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  color: #fff;
+}
+
+.footer span {
+  color: #ccc;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  text-align: center;
+  color: #ccc;
+}
+
+/* footer alignment setting */
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* quick links list aligned */
+ul.footer-links {
+  padding-left: 20px;
+}
+
+/* Social media icons setting */
+ul.footer-social {
+  padding-left: 0px;
+}
+
+.footer-logo img {
+  width: 100px;
+  padding-top: 30px
+}
+
+
+/* 
+ Angrej changes start 
+  */
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+} */
+
+/* Styles for product list grid */
+.product-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/*Styles for products in product list*/
+.product {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  /* transform: translateY(-15px); */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* Styles for product img clickable links */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles for product images */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-name {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.product-price {
+  margin: 0;
+  color: #888;
+}
+
+/* Angrej Chnages end */
+
+
+/* Styles for the second navbar */
+.navbar-secondary {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  z-index: 999;
+}
+
+/* Styles for body to set navbar on the top*/
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 120px;
+}
+
+/* Styles to highlight text on the search */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}

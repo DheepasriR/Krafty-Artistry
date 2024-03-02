@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <!-- JQUERY LIBRARIES -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+  <!-- JS file link -->
+  <script src="js/register.js"></script>
+  <!-- CSS file link -->
+  <link rel="stylesheet" type="text/css" href="css/register.css">
+
+  <!-- jquery ui custom theme changes -->
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <!-- <script src="./js/jquery.js"></script>
+  <script src="./js/jquery-ui.min.js"></script> -->
+</head>
+
+<body>
+
+  <!-- MAIN SECTION -->
+  <section id="divs1">
+
+    <!-- DIV 1 -->
+    <div id="part1">
+      <img  src="img/logo.svg" alt="">
+      <h1 style="color: white;"> Welcome to Krafty Artistry... </h2>
+      <h4 style="color: whitesmoke;"> where imagination takes shape.</h4>
+      <h2 style="color: whitesmoke;">Sign up <span><h6 style="color: whitesmoke;">and explore the magic of handcrafted art with us.</h6></span></h2>
+    </div>
+
+    <!-- DIV 2 -->
+    <div id="part2">
+
+      <!-- REGISTRATION FORM with post method to process form data -->
+      <form id="registration-form" action="php/addUser.php" method="post">
+    
+        <!-- FIRST NAME as a required filed-->
+        <label for="firstname" id="fields">First Name<span class="req">*</span></label>
+        <input type="text" id="firstname" name="firstname">
+        <br><br>
+              
+        <!-- LAST NAME -->
+        <label for="lastname" id="fields">Last Name</label>
+        <input type="text" id="lastname" name="lastname">
+        <br><br>
+      
+        <!-- DATE OF BIRTH -->
+        <label for="birthday" id="fields">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday">
+        
+        <br><br>
+      
+        <!-- GENDER -->
+        <label for="gender" id="fields">Gender</label>
+        <!-- dropdwon selection option to select gender -->
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+        <br><br>
+
+        <!-- PHONE -->
+        <label for="phone" id="fields">Phone Number</label>
+        <div class="select" id="phone">
+          <!-- dropdwon selection option to select country code -->
+            <div id="select-inside1">
+              <select id="country-code" name="country-code">
+                <option value="+1">+1 (CA)</option>
+                <option value="+91">+91 (IN)</option>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+              </select>
+            </div>
+            <div id="select-inside2">
+              <input id="phone-field" type="tel" id="phone" name="phone" >
+            </div>
+        </div>
+        <br><br>
+
+        <!-- ADDRESS -->
+        <label for="residence" id="fields">Address</label>
+        <input type="text" id="residence" name="residence">
+        <br><br>
+
+        <!-- EMAIL as a required filed-->
+        <label for="email" id="fields">Email<span class="req">*</span></label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+              
+        <!-- USERNAME -->
+        <label for="username" id="fields">Username</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+                
+        <!-- PASSWORD as a required field-->
+        <label for="password" id="fields">Password<span class="req">*</span></label>
+        <input type="password" id="password" name="password" required 
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> 
+        <br><br>
+        
+        <!-- RETYPE PASSWORD as a required filed-->
+        <label for="confirmPassword" id="fields">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br><br>
+          
+        <!-- SUBMIT BUTTON to regiser the user -->
+        <input type="submit" value="Register" class="ui-button ui-state-active">
+      
+        <!-- link to login page if the user had already registered -->
+        <p>Already have an account? <a href="html/login.html">Login now</a></p>
+      
+      </form> 
+      
+    </div>
+
+  </section>
+
+</body>
+</html>
+

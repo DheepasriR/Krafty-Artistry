@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<!-- JQUERY LIBRARIES -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+	<!-- JS file link -->
+    <script src="../js/login.js"></script>
+	<!-- CSS file link -->
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+	<!--jquery ui custom theme-->
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	
+	
+</head>
+
+
+<body>
+
+	<!-- MAIN SECTION -->
+	<section>
+		
+		<div id="part">
+
+			<!-- LOGIN FORM for existing users with post method to process form data-->
+			<form id="login-form" action="../php/loginUser.php" method="post">
+
+				<!-- LOGO -->
+				<img id="img2" src="../media/images/logo.svg" alt="">
+
+				<!-- EMAIL as a requirend field-->
+				<label id="fields" for="email">Email Id<span class="req">*</span></label>
+        		<input type="email" id="email" name="email" required><br>
+				<br>
+
+				<!-- PASSWORD as a requirend field-->
+				<label id="fields" for="password">Password<span class="req">*</span></label>
+				<input type="password" id="password" name="password" required ><br>
+				<br>
+
+				<!-- SUBMIT BUTTON to login -->
+				<input type="submit" value="Login" class="ui-button ui-state-active">
+
+			</form>
+
+		</div>
+	
+	</section>
+
+</body>
+</html>

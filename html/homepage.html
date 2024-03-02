@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--CSS files links-->
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+  <link rel="stylesheet" type="text/css" href="../css/homepage.css">
+  <!--jquery libraries-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/homepage.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <?php 
+      // Start the session
+      session_start();
+    ?>
+  
+
+  <nav class="first-nav">
+    <div class="navbar navbar-primary">
+      <a href="#" class="logo">
+        <img src="../media/images/logo.png" alt="Krafty Artistry Logo">
+        Krafty Artistry
+      </a>
+      <form class="search-form">
+        <input type="text" placeholder="Search..." class="search-bar" id="search-bar">
+        <button type="submit" class="search-button" id="searchButton">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <a href="../php/userDetails.php" class="user-greeting" title="User Profile"><i class="fas fa-user"></i></a>
+      <a href="productGallery.html" class="product-gallery" title="Product gallery"><i class="fas fa-images"></i></a>
+      <a href="aboutus.html" class="about-us" title="About us"><i class="fas fa-info-circle"></i></a>
+      <a href="../php/logout.php" class="logout-icon" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </nav>
+  <nav class="navbar navbar-secondary">
+    <a class="logo" href="#">Handmade</a>
+    <div class="navbar-right">
+      <ul class="categories">
+        <!-- <li><a href="#gifting">Gifting</a></li> -->
+        <li><a href="#decor">Decor</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#walletBag">Wallet & Bag</a></li>
+        <li><a href="#lighting">Lighting</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <!-- Add more categories as needed -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="carousel-container">
+    <!-- Your carousel container -->
+    <div class="carousel">
+      <div><img src="../media/images/carousel-3.jpg" alt="Image 1" height="180px"></div>
+      <div><img src="../media/images/carousel-glass.jpeg" alt="Image 2" height="180px"></div>
+      <div><img src="../media/images/carousel-gifting.jpeg" alt="Image 3" height="180px"></div>
+      <!-- Add more images here -->
+    </div>
+  </div>
+
+  <section class="content">
+    <div id="category1">
+      <h1>
+        <center>Bestsellers</center>
+      </h1>
+      <!-- Angrej changes start -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=1" class="product-link">
+            <img width="433" height="516" src="../media/images/hand-made-dinner-set.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hand-Painted Dinner Set</h3>
+              <p class="product-price">Price: $80.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=2" class="product-link">
+            <img width="433" height="516" src="../media/images/hand-carved-convex-mirror.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hand-Carved Convex mirror</h3>
+              <p class="product-price">Price: $45.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=3" class="product-link">
+            <img width="433" height="516" src="../media/images/hand-beaten-tea-set.jpg" alt="Product 3"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hand-Beaten Tea Set</h3>
+              <p class="product-price">Price: $50.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=4" class="product-link">
+            <img width="433" height="516" src="../media/images/stone-sculpture-lamp.jpg" alt="Product 4"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Stone Sculpture Lamp</h3>
+              <p class="product-price">$100.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="category2">
+      <h1 id="decor">
+        <center>Decor</center>
+      </h1>
+      <!-- Angrej changes start -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=5" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-1.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Fish' Handmade & Hand-Painted Garden Decorative Wall Hanging</h3>
+              <p class="product-price">Price: $18.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=6" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-2.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Terracotta Warli Handpainted Pots Blue Set Of 3</h3>
+              <p class="product-price">Price: $23.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=7" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-3.jpg" alt="Product 3"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hand-Painted Ceramic Chutney & Pickle Bowls</h3>
+              <p class="product-price">Price: $50.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=8" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-4.jpg" alt="Product 4"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Warli Hand-Painted Key Holder With Dhokra Art </h3>
+              <p class="product-price">$100.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- GRID 2 -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=9" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-5.jpg" alt="Product 5"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">'Floral Block' Hand Carved Towel Ring Holder In Sheesham Wood</h3>
+              <p class="product-price">Price: $40.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=10" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-6.jpg" alt="Product 6"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">'Birds On Planks' Warli Hand-Painted Key Holder In Sheesham Wood</h3>
+              <p class="product-price">Price: $45.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=11" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-7.jpg" alt="Product 7"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Terracotta Warli Handpainted Pots With Sheesham Wooden Frame Wall Hanging</h3>
+              <p class="product-price">Price: $50.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=12" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/decor-8.jpg" alt="Product 8"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Shankh' Brass Diya In Brass</h3>
+              <p class="product-price">Price: $28.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div id="category3">
+      <h1 id="accessories">
+        <center>Accessories</center>
+      </h1>
+      <!-- Angrej changes start -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=13" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-1.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Wooden Parrot Bell Earrings ~ Red </h3>
+              <p class="product-price">Price: $20.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=14" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-2.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Swing Earrings ~ Turquoise Floral</h3>
+              <p class="product-price">Price: $16.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=15" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-3.jpg" alt="Product 3"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Miharu Brass Thread Choker Necklace</h3>
+              <p class="product-price">Price: $20.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=16" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-4.jpg" alt="Product 4"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Miharu Strip Brass Bangles</h3>
+              <p class="product-price">$15.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- GRID 2 -->
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=17" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-5.jpg" alt="Product 5"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Leaf Silver Filigree Nazarbattu</h3>
+              <p class="product-price">Price: $22.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=18" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-6.jpg" alt="Product 6"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hand Embroidered Pure Cotton Unisex Apron</h3>
+              <p class="product-price">Price: $12.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=19" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-7.jpg" alt="Product 7"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hand Embroidered Mask</h3>
+              <p class="product-price">Price: $8.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=20" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/accessories-8.jpg" alt="Product 8"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Silver Filigree Handmade Ring</h3>
+              <p class="product-price">$30.00</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="category4">
+      <h1 id="walletBag">
+        <center>Wallet & Bag</center>
+      </h1>
+      <!-- Angrej changes start -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=21" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-1.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Handknotted Crochet Tote Bag - Round, White & Yellow</h3>
+              <p class="product-price">Price: $42.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=22" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-2.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Rugged Leather Duffler Bag</h3>
+              <p class="product-price">Price: $38.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=23" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-3.jpg" alt="Product 3"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Handcrafted Leather Cross Body Bag With Hand Stitch Detail</h3>
+              <p class="product-price">Price: $30.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id?24" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-4.jpg" alt="Product 4"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Luna Crossbody Bag - Black</h3>
+              <p class="product-price">$29.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- GRID 2 -->
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=25" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-5.jpg" alt="Product 5"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Laptop Bag - Nautical Waves</h3>
+              <p class="product-price">$31.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=26" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-6.jpg" alt="Product 6"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Verve Zip-around Womens Wallet - Dusty Rose</h3>
+              <p class="product-price">Price: $24.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=27" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-7.jpg" alt="Product 7"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Mens Crossbody Bag - Back & Tan</h3>
+              <p class="product-price">Price: $50.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=28" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/bag-8.jpg" alt="Product 8"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Everyday Work Tote Bag - White</h3>
+              <p class="product-price">$60.00</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="category5">
+      <h1 id="lighting">
+        <center>Lighting</center>
+      </h1>
+      <!-- Angrej changes start -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=29" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-1.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Glowing Vines Handcrafted Wall Sconce Tea Light Holders In Iron With Glass
+                Holders </h3>
+              <p class="product-price">Price: $24.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=30" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-2.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Hanging Bottle Shaped Handapinted Terracotta Tea Light Holder</h3>
+              <p class="product-price">Price: $15.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=31" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-3.jpg" alt="Product 3"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Birds On Branch Handcrafted Wall Sconce Tea Light Holder In Iron With Glass
+                Holders</h3>
+              <p class="product-price">Price: $36.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=32" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-4.jpg" alt="Product 4"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Morrocan Flame' Hand-etched Pendant Lamp In Iron</h3>
+              <p class="product-price">$100.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- GRID 2 -->
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=33" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-5.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">20 Inch Dhokra And Warli Handpainted Wooden Lamp Brown</h3>
+              <p class="product-price">Price: $40.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=34" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-6.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Handcrafted Warli & Dhokra Art Wall Lamp</h3>
+              <p class="product-price">Price: $37.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=35" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-7.jpg" alt="Product 7"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">10 Inch Modern Frosted Glass Lamp In Sheesham Wood</h3>
+              <p class="product-price">Price: $50.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=36" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/lighting-8.jpg" alt="Product 8"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Ceramic Gas Stove Brewing Aroma Diffuser</h3>
+              <p class="product-price">$100.00</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="category6">
+      <h1 id="travel">
+        <center>Travel</center>
+      </h1>
+      <!-- Angrej changes start -->
+
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=37" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-1.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Flat Pouch - Nautical Waves</h3>
+              <p class="product-price">Price: $20.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=38" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-2.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Luggage Tag - Wanderlust</h3>
+              <p class="product-price">Price: $12.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=39" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-3.jpg" alt="Product 3"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Travel Wallet - Light Blue</h3>
+              <p class="product-price">Price: $20.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=40" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-4.jpg" alt="Product 4"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Exclusive Passport Cover - Road Rush</h3>
+              <p class="product-price">$24.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <!-- GRID 2 -->
+      <div class="product-list">
+        <div class="product">
+          <a href="./productDetails.html?id=41" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-5.jpg" alt="Product 1"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Exclusive Passport Cover - I Woof You</h3>
+              <p class="product-price">Price: $30.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=42" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-6.jpg" alt="Product 2"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Travel Wallet - Dark Blue</h3>
+              <p class="product-price">Price: $19.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=43" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-7.jpg" alt="Product 7"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Couple Leather Luggage Tag</h3>
+              <p class="product-price">Price: $16.00</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="./productDetails.html?id=44" class="product-link">
+            <img style="width:433px; height:320px" src="../media/images/travel-8.jpg" alt="Product 8"
+              class="product-image">
+            <div class="product-details">
+              <h3 class="product-name">Personalised Large Vanity Pouch - Tan</h3>
+              <p class="product-price">$100.00</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Angrej changes end -->
+  <footer class="footer">
+    <div class="footer-cont">
+      <div class="row">
+        <div>
+          <a href="#" class="footer-logo">
+            <img src="../media/images/logo.png" alt="Krafty Artistry Logo">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h4>About Us</h4>
+          <span>Curating Exceptional Handcrafted Artistry</span>
+        </div>
+        <div class="col-md-3">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <ul class="footer-social">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="margin-top: 15px;">
+            <p style="margin: 0px;">&copy; 2023 Your Website. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

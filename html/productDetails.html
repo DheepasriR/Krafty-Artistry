@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- css files links -->
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+  <link rel="stylesheet" type="text/css" href="../css/homepage.css">
+  <!-- jquery libraries -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- js files links -->
+  <script src="../js/nav.js"></script>
+  <script src="../js/homepage.js"></script>
+  <title>Product Detail</title>
+  <!--productDeatils css file link-->
+  <link rel="stylesheet" type="text/css" href="../css/productDetails.css"
+  <style>
+    .navbar{
+        margin-bottom: 0px;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="first-nav">
+    <div class="navbar navbar-primary">
+        <a href="./homepage.html" class="logo">
+            <img src="../media/images/logo.png" alt="Krafty Artistry Logo">
+            Krafty Artistry
+          </a>
+      <form class="search-form">
+        <input type="text" placeholder="Search..." class="search-bar" id="search-bar">
+        <button type="submit" class="search-button" id="searchButton">
+            <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <a href="../php/userDetails.php" class="user-greeting"><i class="fas fa-user"></i></a>
+      <a href="productGallery.html" class="product-gallery" title="Product gallery"><i class="fas fa-images"></i></a>
+      <a href="aboutus.html" class="about-us"><i class="fas fa-info-circle"></i></a>
+      <a href="../php/logout.php" class="logout-icon"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </nav>
+
+  <!-- Add product details -->
+  <div id="product-details">
+<h1>Product</h1>
+  </div>
+
+  <script src="../js/productDetails.js"></script>
+
+  <!-- Angrej changes end -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-cont">
+      <div class="row">
+        <div>
+          <a href="./homepage.html" class="footer-logo">
+            <img src="../media/images/logo.png" alt="Krafty Artistry Logo">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h4>About Us</h4>
+          <span>Curating Exceptional Handcrafted Artistry</span>
+        </div>
+        <div class="col-md-3">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <ul class="footer-social">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="margin-top: 15px;">
+            <p style="margin: 0px;">&copy; 2023 Your Website. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

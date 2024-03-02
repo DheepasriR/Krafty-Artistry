@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us Page</title>
+   <link rel="stylesheet" type="text/css" href="../css/nav.css">
+   <link rel="stylesheet" type="text/css" href="../css/homepage.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="../js/nav.js"></script>
+   <script src="../js/homepage.js"></script>
+   <!-- css stylesheet link -->
+   <link rel="stylesheet" href="../css/aboutus.css">
+   <!-- font awesome CDN -->
+   <script src="https://kit.fontawesome.com/e558b51530.js" crossorigin="anonymous"></script>
+   <!-- stylesheet link, jquery library CDN and javascript link for JQUERY PLUGIN -->
+   <link rel="stylesheet" href="../css/flip-box.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="../js/flip-box.js"></script>
+   <!--jquery ui theme-->
+   <link href="../css/jquery-ui.css" rel="stylesheet">
+   <script src="../js/aboutus.js"></script>
+   
+   <!--jquery ui custom theme-->
+   <link rel="stylesheet" href="../css/jquery-ui.css">
+
+
+
+</head>
+
+<body>
+   <!--Code for header-->
+   <nav class="first-nav">
+      <div class="navbar navbar-primary">
+         <a href="./homepage.html" class="logo">
+            <img src="../media/images/logo.png" alt="Krafty Artistry Logo">
+            Krafty Artistry
+         </a>
+         <form class="search-form">
+            <input type="text" placeholder="Search..." class="search-bar" id="search-bar">
+            <button type="submit" class="search-button" id="searchButton">
+               <i class="fas fa-search"></i>
+            </button>
+         </form>
+         <a href="../php/userDetails.php" class="user-greeting"><i class="fas fa-user"></i></a>
+         <a href="productGallery.html" class="product-gallery" title="Product gallery"><i class="fas fa-images"></i></a>
+         <a href="aboutus.html" class="about-us"><i class="fas fa-info-circle"></i></a>
+         <a href="../php/logout.php" class="logout-icon"><i class="fas fa-sign-out-alt"></i></a>
+      </div>
+   </nav>
+
+   <!-- SECTION 1 - ABOUT THE WEBSITE  -->
+   <section>
+      <h1 id="heading1">Welcome to KRAFTY ARTISTRY !</h1>
+      <p>At our company, we are passionate about creating arts with our creative imagination..
+         All of our crafts are made with love and care, and we take pride in the attention to detail that goes into each
+         and every one of our creations.
+         We use only high-quality materials and work with a range of techniques to create our pieces.
+         We love to experiment with new materials and techniques, and are always looking for ways to push the boundaries
+         of what is possible.
+         Our mission is to provide our customers with a range of handmade crafts that they can treasure for years to
+         come.</p>
+   </section>
+
+   <!-- SECTION 2 - ABOUT THE PRODUCT SPECIALITIES  -->
+   <section>
+      <h2 id="heading2">we offer..</h2>
+      <div id="one">
+         <div class="divs">
+            <img src="../media/images/gift.png" alt="">
+            <p>gifts you can customize for your loved one</p>
+         </div>
+         <div class="divs">
+            <img src="../media/images/idea.png" alt="">
+            <p>unique and one of a kind pieces for your home</p>
+         </div>
+         <div class="divs">
+            <img src="../media/images/healthcare.png" alt="">
+            <p>beautiful handmade crafts for every occasion</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- SECTION 3 - FEEDBACK FORM  -->
+   <section>
+      <div id="feedback">
+         <div id="feedback1">
+            <h3>WE WELCOME YOUR </h3>
+            <h2>QUESTIONS AND FEEDBACK</h2>
+         </div>
+         <div id="feedback2">
+            <form id="feedback-form" action="" method="">
+
+               <!-- USER NAME -->
+               <label id="fields" for="username">User Name</label>
+               <input type="text" id="username" name="username" class="input-user"><br><br>
+
+               <!-- FEEDBACK MESSAGE TEXT AREA -->
+               <label id="fields" for="message">Message</label><br>
+               <textarea rows="9" cols="19" style="background-color: whitesmoke; border-radius: 10px;">
+            </textarea> <br><br>
+
+               <!-- SUBMIT BUTTON TO SUBMIT THE FEEDBACK FORM -->
+               <input type="submit" value="Send" class="ui-button ui-state-active">
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <!--Code for website footer-->
+   <footer class="footer">
+      <div class="footer-cont">
+         <div class="row">
+            <div>
+               <a href="./homepage.html" class="footer-logo">
+                  <img src="../media/images/logo.png" alt="Krafty Artistry Logo">
+               </a>
+            </div>
+            <div class="col-md-6">
+               <h4>About Us</h4>
+               <span>Curating Exceptional Handcrafted Artistry</span>
+            </div>
+            <div class="col-md-3">
+               <h4>Quick Links</h4>
+               <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>Follow Us</h4>
+               <ul class="footer-social">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12" style="margin-top: 15px;">
+                  <p style="margin: 0px;">&copy; 2023 Your Website. All rights reserved.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
